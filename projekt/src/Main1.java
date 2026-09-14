@@ -59,6 +59,10 @@ public class Main1 {
         double wynik = (double) x / y;
 
         System.out.println(wynik);
+        System.out.println("Podaj słowo:");
+        String slowo = scanner.next();
+
+        System.out.println(slowo.toUpperCase());
     }
 
 }
