@@ -21,6 +21,22 @@ public class Main1 {
         double fahrenheit = 1.8 * stopnie + 32.0;
 
         System.out.println("Temperatura w Fahrenheitach: " + fahrenheit);
+        
+
+
+        System.out.println("Podaj pierwszy bok:");
+
+        double bok1 = scanner.nextDouble();
+
+        System.out.println("Podaj drugi bok:");
+        double bok2 = scanner.nextDouble();
+
+        System.out.println("Podaj trzeci bok:");
+        double bok3 = scanner.nextDouble();
+
+        double obwod = bok1 + bok2 + bok3;
+
+        System.out.println("Obwód trójkąta: " + obwod);
     }
 
 }
