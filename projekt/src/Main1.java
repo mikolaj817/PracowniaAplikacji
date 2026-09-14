@@ -63,6 +63,12 @@ public class Main1 {
         String slowo = scanner.next();
 
         System.out.println(slowo.toUpperCase());
+        System.out.println("Podaj promień koła:");
+        int promien = scanner.nextInt();
+
+        double pole = Math.PI * promien * promien;
+
+        System.out.println("Pole koła: " + pole);
     }
 
 }
