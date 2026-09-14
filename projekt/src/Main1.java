@@ -21,7 +21,7 @@ public class Main1 {
         double fahrenheit = 1.8 * stopnie + 32.0;
 
         System.out.println("Temperatura w Fahrenheitach: " + fahrenheit);
-        
+
 
 
         System.out.println("Podaj pierwszy bok:");
@@ -37,6 +37,17 @@ public class Main1 {
         double obwod = bok1 + bok2 + bok3;
 
         System.out.println("Obwód trójkąta: " + obwod);
+
+        System.out.println("Podaj pierwsze słowo:");
+        String slowo1 = scanner.next();
+
+        System.out.println("Podaj drugie słowo:");
+        String slowo2 = scanner.next();
+
+        System.out.println("Podaj trzecie słowo:");
+        String slowo3 = scanner.next();
+
+        System.out.println(slowo3 + ", " + slowo2 + ", " + slowo1);
     }
 
 }
