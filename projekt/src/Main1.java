@@ -48,6 +48,10 @@ public class Main1 {
         String slowo3 = scanner.next();
 
         System.out.println(slowo3 + ", " + slowo2 + ", " + slowo1);
+        System.out.println("Podaj wyraz:");
+        String wyraz = scanner.next();
+
+        System.out.println("Liczba znaków: " + wyraz.length());
     }
 
 }
