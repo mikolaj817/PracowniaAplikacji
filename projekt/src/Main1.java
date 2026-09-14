@@ -52,6 +52,13 @@ public class Main1 {
         String wyraz = scanner.next();
 
         System.out.println("Liczba znaków: " + wyraz.length());
+
+        int x = 5;
+        int y = 2;
+
+        double wynik = (double) x / y;
+
+        System.out.println(wynik);
     }
 
 }
