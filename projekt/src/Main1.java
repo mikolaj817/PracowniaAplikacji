@@ -7,5 +7,6 @@ public class Main1 {
         String imie = "Mikołaj";
         int rokUrodzenia = 2007;
         double liczba = 0.66;
+        System.out.println("Mam na imię " + imie + ", mam " + (2026 - rokUrodzenia) + " lat i będę pisać maturę za " + liczba + " roku.");
     }
 }
