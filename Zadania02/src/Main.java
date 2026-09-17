@@ -146,6 +146,7 @@ public class Main {
             System.out.println("Rok nie jest przestępny.");
         }
         */
+        /*
         // Zadanie 9
         System.out.println("Podaj wagę w kg:");
         double waga = scanner.nextDouble();
@@ -164,5 +165,46 @@ public class Main {
         } else {
             System.out.println("nadwaga");
         }
+         */
+        // Zadanie 10
+        double cena;
+        int liczbaRat;
+
+        while (true) {
+            System.out.println("Podaj cenę towaru (100 - 10000):");
+            cena = scanner.nextDouble();
+
+            if (cena >= 100 && cena <= 10000) {
+                break;
+            }
+
+            System.out.println("Nieprawidłowa cena.");
+        }
+
+        while (true) {
+            System.out.println("Podaj liczbę rat (6 - 48):");
+            liczbaRat = scanner.nextInt();
+
+            if (liczbaRat >= 6 && liczbaRat <= 48) {
+                break;
+            }
+
+            System.out.println("Nieprawidłowa liczba rat.");
+        }
+
+        double oprocentowanie;
+
+        if (liczbaRat <= 12) {
+            oprocentowanie = 0.025;
+        } else if (liczbaRat <= 24) {
+            oprocentowanie = 0.05;
+        } else {
+            oprocentowanie = 0.10;
+        }
+
+        double kwota = cena + cena * oprocentowanie;
+        double rata = kwota / liczbaRat;
+
+        System.out.println("Miesięczna rata: " + rata + " zł");
     }
 }
