@@ -166,6 +166,7 @@ public class Main {
             System.out.println("nadwaga");
         }
          */
+        /*
         // Zadanie 10
         double cena;
         int liczbaRat;
@@ -206,5 +207,38 @@ public class Main {
         double rata = kwota / liczbaRat;
 
         System.out.println("Miesięczna rata: " + rata + " zł");
+         */
+        // Zadanie 11
+        System.out.println("Prosty kalkulator");
+
+        System.out.println("Podaj pierwszą liczbę:");
+        double kalkulatorLiczba1 = scanner.nextDouble();
+
+        System.out.println("Podaj działanie (+, -, *, /):");
+        String dzialanie = scanner.next();
+
+        System.out.println("Podaj drugą liczbę:");
+        double kalkulatorLiczba2 = scanner.nextDouble();
+
+        switch (dzialanie) {
+            case "+":
+                System.out.println("Wynik: " + (kalkulatorLiczba1 + kalkulatorLiczba2));
+                break;
+            case "-":
+                System.out.println("Wynik: " + (kalkulatorLiczba1 - kalkulatorLiczba2));
+                break;
+            case "*":
+                System.out.println("Wynik: " + (kalkulatorLiczba1 * kalkulatorLiczba2));
+                break;
+            case "/":
+                if (kalkulatorLiczba2 == 0) {
+                    System.out.println("Nie można dzielić przez zero.");
+                } else {
+                    System.out.println("Wynik: " + (kalkulatorLiczba1 / kalkulatorLiczba2));
+                }
+                break;
+            default:
+                System.out.println("Nieprawidłowy symbol działania.");
+        }
     }
 }
