@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        /*
+        // Zadanie 1
         System.out.println("Podaj liczbę:");
         int liczba = scanner.nextInt();
 
@@ -14,6 +16,7 @@ public class Main {
         }
 
 
+        // Zadanie 2
         System.out.println("Podaj pierwszy bok:");
         int bok1 = scanner.nextInt();
 
@@ -29,6 +32,8 @@ public class Main {
             System.out.println("Nie można zbudować trójkąta.");
         }
 
+
+        // Zadanie 3
         System.out.println("Podaj pierwszą liczbę:");
         int liczba1 = scanner.nextInt();
 
@@ -42,6 +47,7 @@ public class Main {
         }
 
 
+        // Zadanie 4
         System.out.println("Podaj pierwszą liczbę:");
         int liczba3 = scanner.nextInt();
 
@@ -64,6 +70,7 @@ public class Main {
         System.out.println("Największa liczba: " + najwieksza);
 
 
+        // Zadanie 5
         System.out.println("Podaj numer miesiąca:");
         int miesiac = scanner.nextInt();
 
@@ -106,6 +113,17 @@ public class Main {
                 break;
             default:
                 System.out.println("Nieprawidlowy numer miesiaca");
+        }
+        */
+
+        // Zadanie 6
+        System.out.println("Podaj imię:");
+        String imie = scanner.next();
+
+        if (imie.equals("Mikolaj")) {
+            System.out.println("Tak, masz takie samo imię jak ja.");
+        } else {
+            System.out.println("Nie, masz inne imię.");
         }
     }
 }
