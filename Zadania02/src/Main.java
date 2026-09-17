@@ -115,7 +115,7 @@ public class Main {
                 System.out.println("Nieprawidlowy numer miesiaca");
         }
         */
-
+        /*
         // Zadanie 6
         System.out.println("Podaj imię:");
         String imie = scanner.next();
@@ -125,5 +125,13 @@ public class Main {
         } else {
             System.out.println("Nie, masz inne imię.");
         }
+        */
+        // Zadanie 7
+        System.out.println("Podaj wiek:");
+        int wiek = scanner.nextInt();
+
+        boolean pelnoletni = wiek >= 18 ? true : false;
+
+        System.out.println(pelnoletni);
     }
 }
