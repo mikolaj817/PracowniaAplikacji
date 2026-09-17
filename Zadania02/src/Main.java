@@ -135,6 +135,7 @@ public class Main {
 
         System.out.println(pelnoletni);
          */
+        /*
         // Zadanie 8
         System.out.println("Podaj rok:");
         int rok = scanner.nextInt();
@@ -143,6 +144,25 @@ public class Main {
             System.out.println("Rok jest przestępny.");
         } else {
             System.out.println("Rok nie jest przestępny.");
+        }
+        */
+        // Zadanie 9
+        System.out.println("Podaj wagę w kg:");
+        double waga = scanner.nextDouble();
+
+        System.out.println("Podaj wzrost w metrach:");
+        double wzrost = scanner.nextDouble();
+
+        double bmi = waga / (wzrost * wzrost);
+
+        System.out.println("BMI: " + bmi);
+
+        if (bmi < 18.5) {
+            System.out.println("niedowaga");
+        } else if (bmi <= 24.9) {
+            System.out.println("waga prawidłowa");
+        } else {
+            System.out.println("nadwaga");
         }
     }
 }
