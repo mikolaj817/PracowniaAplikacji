@@ -28,5 +28,17 @@ public class Main {
         } else {
             System.out.println("Nie można zbudować trójkąta.");
         }
+
+        System.out.println("Podaj pierwszą liczbę:");
+        int liczba1 = scanner.nextInt();
+
+        System.out.println("Podaj drugą liczbę:");
+        int liczba2 = scanner.nextInt();
+
+        if (liczba1 > liczba2) {
+            System.out.println("Większa liczba: " + liczba1);
+        } else {
+            System.out.println("Większa liczba: " + liczba2);
+        }
     }
 }
