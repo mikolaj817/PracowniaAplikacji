@@ -40,5 +40,27 @@ public class Main {
         } else {
             System.out.println("Większa liczba: " + liczba2);
         }
+
+
+        System.out.println("Podaj pierwszą liczbę:");
+        int liczba3 = scanner.nextInt();
+
+        System.out.println("Podaj drugą liczbę:");
+        int liczba4 = scanner.nextInt();
+
+        System.out.println("Podaj trzecią liczbę:");
+        int liczba5 = scanner.nextInt();
+
+        int najwieksza = liczba3;
+
+        if (liczba4 > najwieksza) {
+            najwieksza = liczba4;
+        }
+
+        if (liczba5 > najwieksza) {
+            najwieksza = liczba5;
+        }
+
+        System.out.println("Największa liczba: " + najwieksza);
     }
 }
