@@ -1,6 +1,5 @@
-import java.util.Scanner;
 void main() {
-
+    Scanner scanner = new Scanner(System.in);
     /*// Zadanie 1
     int[] tablicaParzysta = {10, 20, 30, 40, 50, 60};
     int[] tablicaNieparzysta = {1, 2, 3, 4, 5};
@@ -34,8 +33,7 @@ void main() {
     for (String slowo : slowa3) {
         System.out.println(slowo.toUpperCase());
     }*/
-    // Zadanie 4
-    Scanner scanner = new Scanner(System.in);
+    /*// Zadanie 4
 
     String[] slowa4 = new String[5];
 
@@ -54,5 +52,29 @@ void main() {
 
         System.out.println(odwrocone);
     }
+*/
+    // Zadanie 5
+    int[] liczby5 = new int[8];
 
+    System.out.println("Podaj 8 liczb:");
+
+    for (int i = 0; i < liczby5.length; i++) {
+        liczby5[i] = scanner.nextInt();
+    }
+
+    for (int i = 0; i < liczby5.length - 1; i++) {
+        for (int j = 0; j < liczby5.length - 1 - i; j++) {
+            if (liczby5[j] > liczby5[j + 1]) {
+                int temp = liczby5[j];
+                liczby5[j] = liczby5[j + 1];
+                liczby5[j + 1] = temp;
+            }
+        }
+    }
+
+    System.out.println("Posortowana tablica:");
+
+    for (int liczba : liczby5) {
+        System.out.println(liczba);
+    }
 }
