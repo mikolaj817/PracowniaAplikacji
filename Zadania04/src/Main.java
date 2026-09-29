@@ -15,7 +15,7 @@ void main() {
     for (int i = 0; i < tablicaNieparzysta.length; i += 2) {
         System.out.println(tablicaNieparzysta[i]);
     }*/
-    // Zadanie 2
+    /*// Zadanie 2
     int[] liczby2 = {12, 5, 38, 7, 24, 19};
 
     int najwieksza = liczby2[0];
@@ -26,5 +26,11 @@ void main() {
         }
     }
 
-    System.out.println("Największa liczba: " + najwieksza);
+    System.out.println("Największa liczba: " + najwieksza);*/
+    // Zadanie 3
+    String[] slowa3 = {"Java", "programowanie", "tablica", "zadanie"};
+
+    for (String slowo : slowa3) {
+        System.out.println(slowo.toUpperCase());
+    }
 }
