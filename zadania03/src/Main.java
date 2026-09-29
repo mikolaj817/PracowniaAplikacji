@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 void main() {
     Scanner scanner = new Scanner(System.in);
@@ -26,6 +27,7 @@ void main() {
 
     System.out.println("Suma: " + suma);
 */
+/*
 // Zadanie 4
     System.out.println("Podawaj liczby. Wpisz 0, aby zakończyć:");
 
@@ -60,5 +62,23 @@ void main() {
 
         System.out.println("Suma największej i najmniejszej: " + (min + max));
         System.out.println("Średnia: " + (double) suma4 / ile);
+    }*/
+    // Zadanie 5
+    Random random = new Random();
+    int wylosowana = random.nextInt(100) + 1;
+
+    System.out.println("Zgadnij liczbę od 1 do 100:");
+
+    while (true) {
+        int strzal = scanner.nextInt();
+
+        if (strzal > wylosowana) {
+            System.out.println("Podałeś za dużą wartość");
+        } else if (strzal < wylosowana) {
+            System.out.println("Podałeś za małą wartość");
+        } else {
+            System.out.println("Gratulacje");
+            break;
+        }
     }
 }
