@@ -117,7 +117,7 @@ void main() {
     } else {
         System.out.println("Tablice nie są takie same.");
     }*/
-    // Zadanie 8
+    /*// Zadanie 8
     Random random = new Random();
 
     int[] liczby8 = new int[10];
@@ -173,5 +173,33 @@ void main() {
         System.out.print(liczby8[i] + " ");
     }
 
+    System.out.println();*/
+    // Zadanie 9
+    Random random9 = new Random();
+
+    int[] liczby9 = new int[20];
+
+    for (int i = 0; i < liczby9.length; i++) {
+        liczby9[i] = random9.nextInt(10) + 1;
+    }
+
+    System.out.println("Tablica:");
+
+    for (int liczba : liczby9) {
+        System.out.print(liczba + " ");
+    }
+
     System.out.println();
+
+    for (int i = 1; i <= 10; i++) {
+        int ile = 0;
+
+        for (int liczba : liczby9) {
+            if (liczba == i) {
+                ile++;
+            }
+        }
+
+        System.out.println(i + " występuje " + ile + " razy");
+    }
 }
