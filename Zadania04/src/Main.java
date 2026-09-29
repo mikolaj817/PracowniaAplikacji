@@ -77,7 +77,7 @@ void main() {
     for (int liczba : liczby5) {
         System.out.println(liczba);
     }*/
-    // Zadanie 6
+    /*// Zadanie 6
     int[] liczby6 = new int[5];
 
     System.out.println("Podaj 5 liczb:");
@@ -94,5 +94,27 @@ void main() {
         }
 
         System.out.println(liczba + "! = " + silnia);
+    }*/
+    // Zadanie 7
+    String[] tablicaA = {"Java", "C++", "Python"};
+    String[] tablicaB = {"Java", "C++", "Python"};
+
+    boolean takieSame = true;
+
+    if (tablicaA.length != tablicaB.length) {
+        takieSame = false;
+    } else {
+        for (int i = 0; i < tablicaA.length; i++) {
+            if (!tablicaA[i].equals(tablicaB[i])) {
+                takieSame = false;
+                break;
+            }
+        }
+    }
+
+    if (takieSame) {
+        System.out.println("Tablice są takie same.");
+    } else {
+        System.out.println("Tablice nie są takie same.");
     }
 }
