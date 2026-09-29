@@ -95,7 +95,7 @@ void main() {
 
         System.out.println(liczba + "! = " + silnia);
     }*/
-    // Zadanie 7
+    /*// Zadanie 7
     String[] tablicaA = {"Java", "C++", "Python"};
     String[] tablicaB = {"Java", "C++", "Python"};
 
@@ -116,5 +116,62 @@ void main() {
         System.out.println("Tablice są takie same.");
     } else {
         System.out.println("Tablice nie są takie same.");
+    }*/
+    // Zadanie 8
+    Random random = new Random();
+
+    int[] liczby8 = new int[10];
+    int suma8 = 0;
+
+    for (int i = 0; i < liczby8.length; i++) {
+        liczby8[i] = random.nextInt(21) - 10;
+        suma8 += liczby8[i];
     }
+
+    System.out.println("Tablica:");
+
+    for (int liczba : liczby8) {
+        System.out.print(liczba + " ");
+    }
+
+    int min8 = liczby8[0];
+    int max8 = liczby8[0];
+
+    for (int i = 1; i < liczby8.length; i++) {
+        if (liczby8[i] < min8) {
+            min8 = liczby8[i];
+        }
+
+        if (liczby8[i] > max8) {
+            max8 = liczby8[i];
+        }
+    }
+
+    double srednia8 = (double) suma8 / liczby8.length;
+
+    int mniejsze = 0;
+    int wieksze = 0;
+
+    for (int liczba : liczby8) {
+        if (liczba < srednia8) {
+            mniejsze++;
+        } else if (liczba > srednia8) {
+            wieksze++;
+        }
+    }
+
+    System.out.println();
+    System.out.println("Najmniejszy element: " + min8);
+    System.out.println("Największy element: " + max8);
+    System.out.println("Średnia: " + srednia8);
+    System.out.println("Elementów mniejszych od średniej: " + mniejsze);
+    System.out.println("Elementów większych od średniej: " + wieksze);
+
+    System.out.println("Tablica w odwrotnej kolejności:");
+
+    for (int i = liczby8.length - 1; i >= 0; i--) {
+        System.out.print(liczby8[i] + " ");
+    }
+
+    System.out.println();
 }
