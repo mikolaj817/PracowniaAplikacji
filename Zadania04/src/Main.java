@@ -53,7 +53,7 @@ void main() {
         System.out.println(odwrocone);
     }
 */
-    // Zadanie 5
+    /*// Zadanie 5
     int[] liczby5 = new int[8];
 
     System.out.println("Podaj 8 liczb:");
@@ -76,5 +76,23 @@ void main() {
 
     for (int liczba : liczby5) {
         System.out.println(liczba);
+    }*/
+    // Zadanie 6
+    int[] liczby6 = new int[5];
+
+    System.out.println("Podaj 5 liczb:");
+
+    for (int i = 0; i < liczby6.length; i++) {
+        liczby6[i] = scanner.nextInt();
+    }
+
+    for (int liczba : liczby6) {
+        long silnia = 1;
+
+        for (int i = 1; i <= liczba; i++) {
+            silnia *= i;
+        }
+
+        System.out.println(liczba + "! = " + silnia);
     }
 }
