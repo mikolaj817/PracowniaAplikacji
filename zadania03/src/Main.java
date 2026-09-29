@@ -130,6 +130,7 @@ void main() {
 
         System.out.println();
     }*/
+    /*
     // Zadanie 8
     System.out.println("Podaj liczbę:");
     int liczba8 = scanner.nextInt();
@@ -140,5 +141,20 @@ void main() {
         silnia *= i;
     }
 
-    System.out.println("Silnia: " + silnia);
+    System.out.println("Silnia: " + silnia);*/
+    // Zadanie 9
+    System.out.println("Podaj słowo:");
+    String slowo = scanner.next();
+
+    String odwrocone = "";
+
+    for (int i = slowo.length() - 1; i >= 0; i--) {
+        odwrocone += slowo.charAt(i);
+    }
+
+    if (slowo.equals(odwrocone)) {
+        System.out.println("To jest palindrom.");
+    } else {
+        System.out.println("To nie jest palindrom.");
+    }
 }
