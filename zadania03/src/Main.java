@@ -11,16 +11,18 @@ void main() {
     for (int i = 1; i <= liczba; i += 2) {
         System.out.println(i);
     }
-
     */
-// Zadanie 2
-    System.out.println("Podaj liczbę całkowitą dodatnią:");
-    int n = scanner.nextInt();
+// Zadanie 3
+    System.out.println("Podawaj liczby. Wpisz 0, aby zakończyć:");
 
-    int potega = 1;
+    int suma = 0;
+    int liczba3;
 
-    while (potega <= n) {
-        System.out.println(potega);
-        potega = potega * 2;
-    }
+    do {
+        liczba3 = scanner.nextInt();
+        suma += liczba3;
+    } while (liczba3 != 0);
+
+    System.out.println("Suma: " + suma);
+
 }
