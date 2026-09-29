@@ -114,6 +114,7 @@ void main() {
 
         System.out.println();
     }*/
+   /*
     // Zadanie 7
     System.out.println("Podaj wysokość choinki:");
     int wysokosc = scanner.nextInt();
@@ -128,5 +129,16 @@ void main() {
         }
 
         System.out.println();
+    }*/
+    // Zadanie 8
+    System.out.println("Podaj liczbę:");
+    int liczba8 = scanner.nextInt();
+
+    long silnia = 1;
+
+    for (int i = 1; i <= liczba8; i++) {
+        silnia *= i;
     }
+
+    System.out.println("Silnia: " + silnia);
 }
