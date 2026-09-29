@@ -1,3 +1,4 @@
+import java.util.Scanner;
 void main() {
 
     /*// Zadanie 1
@@ -27,10 +28,31 @@ void main() {
     }
 
     System.out.println("Największa liczba: " + najwieksza);*/
-    // Zadanie 3
+   /* // Zadanie 3
     String[] slowa3 = {"Java", "programowanie", "tablica", "zadanie"};
 
     for (String slowo : slowa3) {
         System.out.println(slowo.toUpperCase());
+    }*/
+    // Zadanie 4
+    Scanner scanner = new Scanner(System.in);
+
+    String[] slowa4 = new String[5];
+
+    System.out.println("Podaj 5 słów:");
+
+    for (int i = 0; i < slowa4.length; i++) {
+        slowa4[i] = scanner.next();
     }
+
+    for (int i = slowa4.length - 1; i >= 0; i--) {
+        String odwrocone = "";
+
+        for (int j = slowa4[i].length() - 1; j >= 0; j--) {
+            odwrocone += slowa4[i].charAt(j);
+        }
+
+        System.out.println(odwrocone);
+    }
+
 }
