@@ -142,7 +142,7 @@ void main() {
     }
 
     System.out.println("Silnia: " + silnia);*/
-    // Zadanie 9
+    /*// Zadanie 9
     System.out.println("Podaj słowo:");
     String slowo = scanner.next();
 
@@ -156,5 +156,20 @@ void main() {
         System.out.println("To jest palindrom.");
     } else {
         System.out.println("To nie jest palindrom.");
+    }*/
+    // Zadanie 10
+    petlaGlowna:
+    for (int i = 1; i <= 10; i++) {
+        if (i % 2 != 0) {
+            continue;
+        }
+
+        for (int j = 1; j <= 10; j++) {
+            if (j > i) {
+                continue petlaGlowna;
+            }
+
+            System.out.println(j);
+        }
     }
 }
