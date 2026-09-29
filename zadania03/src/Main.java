@@ -82,6 +82,7 @@ void main() {
             break;
         }
     }*/
+    /*
     // Zadanie 6
     System.out.println("Podaj znak wypełnienia:");
     char znak = scanner.next().charAt(0);
@@ -109,6 +110,21 @@ void main() {
 
         for (int j = 0; j < a; j++) {
             System.out.print(znak);
+        }
+
+        System.out.println();
+    }*/
+    // Zadanie 7
+    System.out.println("Podaj wysokość choinki:");
+    int wysokosc = scanner.nextInt();
+
+    for (int i = 1; i <= wysokosc; i++) {
+        for (int j = 1; j <= wysokosc - i; j++) {
+            System.out.print(" ");
+        }
+
+        for (int j = 1; j <= 2 * i - 1; j++) {
+            System.out.print("*");
         }
 
         System.out.println();
