@@ -57,11 +57,32 @@ boolean czyTrojkatProstokatny(double a, double b, double c) {
 }
 */
 
-// Zadanie 9
+/*
 char ostatniZnak(String tekst) {
     return tekst.charAt(tekst.length() - 1);
 }
+*/
+
+// Zadanie 10
+boolean czyPalindrom(String tekst) {
+    tekst = tekst.toLowerCase();
+
+    int lewy = 0;
+    int prawy = tekst.length() - 1;
+
+    while (lewy < prawy) {
+        if (tekst.charAt(lewy) != tekst.charAt(prawy)) {
+            return false;
+        }
+
+        lewy++;
+        prawy--;
+    }
+
+    return true;
+}
 
 void main() {
-    System.out.println(ostatniZnak("Witaj"));
+    System.out.println(czyPalindrom("Kajak"));
+    System.out.println(czyPalindrom("dom"));
 }
