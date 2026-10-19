@@ -1,8 +1,14 @@
+/*
 int pobierzWiek() {
     return 19;
 }
+*/
+
+// Zadanie 2
+String pobierzImie() {
+    return "Mikołaj";
+}
 
 void main() {
-    // Zadanie 1
-    System.out.println(pobierzWiek());
+    System.out.println(pobierzImie());
 }
