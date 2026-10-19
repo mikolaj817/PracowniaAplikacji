@@ -42,7 +42,7 @@ double pierwiastek(double liczba) {
 }
 */
 
-// Zadanie 8
+/*
 boolean czyTrojkatProstokatny(double a, double b, double c) {
     if (a <= 0 || b <= 0 || c <= 0) {
         return false;
@@ -55,7 +55,13 @@ boolean czyTrojkatProstokatny(double a, double b, double c) {
     return Math.abs(najwiekszy * najwiekszy - sumaKwadratow)
             < 0.000001;
 }
+*/
+
+// Zadanie 9
+char ostatniZnak(String tekst) {
+    return tekst.charAt(tekst.length() - 1);
+}
 
 void main() {
-    System.out.println(czyTrojkatProstokatny(3, 4, 5));
+    System.out.println(ostatniZnak("Witaj"));
 }
