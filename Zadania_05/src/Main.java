@@ -4,20 +4,25 @@ int pobierzWiek() {
 }
 */
 
-// Zadanie 2
 /*
 String pobierzImie() {
     return "Mikołaj";
 }
 */
 
-// Zadanie 3
+/*
 void obliczDzialania(int a, int b) {
     System.out.println("Suma: " + (a + b));
     System.out.println("Różnica: " + (a - b));
     System.out.println("Iloczyn: " + (a * b));
 }
+*/
+
+// Zadanie 4
+boolean czyParzysta(int liczba) {
+    return liczba % 2 == 0;
+}
 
 void main() {
-    obliczDzialania(10, 5);
+    System.out.println(czyParzysta(8));
 }
