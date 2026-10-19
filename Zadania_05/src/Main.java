@@ -30,11 +30,17 @@ boolean czyPodzielnaPrzez3i5(int liczba) {
 }
 */
 
-// Zadanie 6
+/*
 int doTrzeciejPotegi(int liczba) {
     return liczba * liczba * liczba;
 }
+*/
+
+// Zadanie 7
+double pierwiastek(double liczba) {
+    return Math.sqrt(liczba);
+}
 
 void main() {
-    System.out.println(doTrzeciejPotegi(3));
+    System.out.println(pierwiastek(25));
 }
