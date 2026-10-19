@@ -18,11 +18,17 @@ void obliczDzialania(int a, int b) {
 }
 */
 
-// Zadanie 4
+/*
 boolean czyParzysta(int liczba) {
     return liczba % 2 == 0;
 }
+*/
+
+// Zadanie 5
+boolean czyPodzielnaPrzez3i5(int liczba) {
+    return liczba % 3 == 0 && liczba % 5 == 0;
+}
 
 void main() {
-    System.out.println(czyParzysta(8));
+    System.out.println(czyPodzielnaPrzez3i5(15));
 }
