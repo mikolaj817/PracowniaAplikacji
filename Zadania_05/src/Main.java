@@ -24,11 +24,17 @@ boolean czyParzysta(int liczba) {
 }
 */
 
-// Zadanie 5
+/*
 boolean czyPodzielnaPrzez3i5(int liczba) {
     return liczba % 3 == 0 && liczba % 5 == 0;
 }
+*/
+
+// Zadanie 6
+int doTrzeciejPotegi(int liczba) {
+    return liczba * liczba * liczba;
+}
 
 void main() {
-    System.out.println(czyPodzielnaPrzez3i5(15));
+    System.out.println(doTrzeciejPotegi(3));
 }
