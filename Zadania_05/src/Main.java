@@ -83,7 +83,7 @@ boolean czyPalindrom(String tekst) {
 }
 */
 
-// Zadanie 11
+/*
 int sumaTablicy(int[] liczby) {
     int suma = 0;
 
@@ -93,9 +93,21 @@ int sumaTablicy(int[] liczby) {
 
     return suma;
 }
+*/
+
+// Zadanie 12
+int zliczWystapienia(String tekst, char znak) {
+    int licznik = 0;
+
+    for (int i = 0; i < tekst.length(); i++) {
+        if (tekst.charAt(i) == znak) {
+            licznik++;
+        }
+    }
+
+    return licznik;
+}
 
 void main() {
-    int[] liczby = {1, 7, 20, 100};
-
-    System.out.println(sumaTablicy(liczby));
+    System.out.println(zliczWystapienia("Ala ma kota", 'a'));
 }
