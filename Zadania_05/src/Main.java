@@ -63,7 +63,7 @@ char ostatniZnak(String tekst) {
 }
 */
 
-// Zadanie 10
+/*
 boolean czyPalindrom(String tekst) {
     tekst = tekst.toLowerCase();
 
@@ -81,8 +81,21 @@ boolean czyPalindrom(String tekst) {
 
     return true;
 }
+*/
+
+// Zadanie 11
+int sumaTablicy(int[] liczby) {
+    int suma = 0;
+
+    for (int liczba : liczby) {
+        suma += liczba;
+    }
+
+    return suma;
+}
 
 void main() {
-    System.out.println(czyPalindrom("Kajak"));
-    System.out.println(czyPalindrom("dom"));
+    int[] liczby = {1, 7, 20, 100};
+
+    System.out.println(sumaTablicy(liczby));
 }
