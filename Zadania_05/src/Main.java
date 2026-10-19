@@ -36,11 +36,26 @@ int doTrzeciejPotegi(int liczba) {
 }
 */
 
-// Zadanie 7
+/*
 double pierwiastek(double liczba) {
     return Math.sqrt(liczba);
 }
+*/
+
+// Zadanie 8
+boolean czyTrojkatProstokatny(double a, double b, double c) {
+    if (a <= 0 || b <= 0 || c <= 0) {
+        return false;
+    }
+
+    double najwiekszy = Math.max(a, Math.max(b, c));
+    double sumaKwadratow = a * a + b * b + c * c
+            - najwiekszy * najwiekszy;
+
+    return Math.abs(najwiekszy * najwiekszy - sumaKwadratow)
+            < 0.000001;
+}
 
 void main() {
-    System.out.println(pierwiastek(25));
+    System.out.println(czyTrojkatProstokatny(3, 4, 5));
 }
